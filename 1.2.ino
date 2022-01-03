@@ -190,11 +190,11 @@ DS3231  rtc(SDA, SCL);
 int cur_h, cur_m, chk_h, chk_m, alarm_h, alarm_m;
 // --------------------------------------------------------------------------------------- WiFi
 #define SECRET_CH_ID 1573592
-#define SECRET_WRITE_APIKEY "IU9IGXF4WPN9I5SE"
-#define SECRET_READ_APIKEY "NJR60WS1ULDXT9LC"
+#define SECRET_WRITE_APIKEY "IU3IGXF7WPN9I5SE" // Channel Write API key
+#define SECRET_READ_APIKEY "NJR69WS1ULDXT6LC" // Channel Read API key
 #define ESP_BAUDRATE 115200
-char ssid[] = "EE3070_P1404_1";
-char pass[] = "EE3070P1404";
+char ssid[] = "123456"; // Your WiFi Name
+char pass[] = "EE3070P1404"; // Your WiFi Passworf
 int status = WL_IDLE_STATUS;
 unsigned long myChannelNumber = SECRET_CH_ID;
 const char * myWriteAPIKey = SECRET_WRITE_APIKEY;
