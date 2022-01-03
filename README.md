@@ -1,7 +1,7 @@
 # SmartHome
 This is a Smart Home project using Arduino Mega 2560. In this porject there are 2 Arduino, namely, Master (Arduino 1) and Child (Arduino 2). 
 
-Arduino 1 (Master Arduino) – (Arduino Mega 2560)
+Arduino 1 (Code: https://github.com/qgatn/SmartHome/blob/1d503fcc48116578ecc47eb5e1d5530486d1bbb4/1.2.ino) – (Arduino Mega 2560)
 Our design work can be divided into 4 main subroutines. The first is our Bluetooth subroutine, this is where Master Arduino keeps scanning continuously for input from the user. This part of the system can be considered as the brain of the system because every input from the user gets processed here (This can be found in the ‘BT_read()’ function in the 1.2.ino). Every input from the user has a unique starting code, for example, if the user is sending humidity level from the app, the app automatically adds a ‘!’ symbol at the first position to notify the Arduino that the value is for Smart Irrigation Humidity level. Likewise, there are different symbols that are used to specify what inputs are sent. 
 ‘+’ and ‘-‘ are used to denote that alarm timing is being added or removed respectively.
 ‘/’ and ‘\‘ are used to denote that Schedule is being added or removed respectively.
